@@ -1,0 +1,43 @@
+$main-bg: #efefef;
+$primary: #a9a9a9;
+$secondary: #ff3b3f;
+$success: #caebf2;
+
+body {
+  height: 100vh;
+  background-color: $main-bg !important;
+}
+
+#root {
+  height: 80%;
+}
+
+.main-row {
+  height: 100%;
+}
+
+.time-input {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.timer {
+  h5 {
+    margin-bottom: -10px;
+  }
+
+  .timer-label {
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+}
+
+.text-input-field {
+  color: $primary !important;
+
+  &:focus {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
