@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8980ac-3e29-4409-9c39-ea2b39c9606c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.cce47dd4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.cce47dd4.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +57,7 @@
           <entry key="css" value="38" />
           <entry key="gitignore" value="14" />
           <entry key="html" value="128" />
-          <entry key="js" value="2110" />
+          <entry key="js" value="2116" />
           <entry key="json" value="114" />
           <entry key="scss" value="647" />
         </counts>
@@ -61,7 +67,7 @@
           <entry key="CSS" value="38" />
           <entry key="HTML" value="128" />
           <entry key="JSON" value="114" />
-          <entry key="JavaScript" value="2110" />
+          <entry key="JavaScript" value="2116" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="SCSS" value="647" />
         </counts>
@@ -112,8 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Buttons.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="92">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -290,11 +296,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25965000" />
+    <option name="totallyTimeSpent" value="26258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21299094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -484,8 +489,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Buttons.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="92">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
