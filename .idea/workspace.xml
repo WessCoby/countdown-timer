@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b8980ac-3e29-4409-9c39-ea2b39c9606c" name="Default Changelist" comment="" />
+    <list default="true" id="1b8980ac-3e29-4409-9c39-ea2b39c9606c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +50,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="38" />
+          <entry key="gitignore" value="14" />
           <entry key="html" value="128" />
           <entry key="js" value="2038" />
           <entry key="json" value="114" />
@@ -59,6 +63,7 @@
           <entry key="HTML" value="128" />
           <entry key="JSON" value="114" />
           <entry key="JavaScript" value="2038" />
+          <entry key="PLAIN_TEXT" value="14" />
           <entry key="SCSS" value="647" />
         </counts>
       </usages-collector>
@@ -87,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="64">
+              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -304,7 +309,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23505000" />
+    <option name="totallyTimeSpent" value="24682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -497,8 +502,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="64">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
