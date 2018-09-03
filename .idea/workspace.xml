@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8980ac-3e29-4409-9c39-ea2b39c9606c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
           <entry key="css" value="38" />
           <entry key="gitignore" value="14" />
           <entry key="html" value="128" />
-          <entry key="js" value="2038" />
+          <entry key="js" value="2110" />
           <entry key="json" value="114" />
           <entry key="scss" value="647" />
         </counts>
@@ -62,7 +61,7 @@
           <entry key="CSS" value="38" />
           <entry key="HTML" value="128" />
           <entry key="JSON" value="114" />
-          <entry key="JavaScript" value="2038" />
+          <entry key="JavaScript" value="2110" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="SCSS" value="647" />
         </counts>
@@ -76,24 +75,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
               <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -128,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Buttons.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            <state relative-caret-position="207">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -186,7 +167,6 @@
         <option value="$PROJECT_DIR$/src/TimeInput.js" />
         <option value="$PROJECT_DIR$/src/Timer.js" />
         <option value="$PROJECT_DIR$/src/components/FunctionalButtons.js" />
-        <option value="$PROJECT_DIR$/src/components/Buttons.js" />
         <option value="$PROJECT_DIR$/src/components/Timer.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/public/scss/_custom.scss" />
@@ -195,6 +175,7 @@
         <option value="$PROJECT_DIR$/public/scss/App.scss" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/components/Buttons.js" />
       </list>
     </option>
   </component>
@@ -309,10 +290,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24682000" />
+    <option name="totallyTimeSpent" value="25965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21299094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -412,13 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Buttons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -426,13 +401,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TimeInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" column="113" selection-start-line="16" selection-start-column="113" selection-end-line="16" selection-end-column="113" />
         </state>
       </provider>
     </entry>
@@ -466,13 +434,6 @@
     <entry file="file://$PROJECT_DIR$/public/fontawesome/css/fontawesome.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/scss/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -493,6 +454,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -500,10 +468,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="138">
+          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TimeInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="113" selection-start-line="16" selection-start-column="113" selection-end-line="16" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Buttons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>

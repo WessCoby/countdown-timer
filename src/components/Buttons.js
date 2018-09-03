@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
 class Buttons extends Component {
+
+    alertIt = () => {
+        alert('Timer Started');
+    }
+
     render() {
         return (
                 <div className="btn-group" role="group" aria-label="Control Buttons">
-                    <button type="button" title='Play' className="btn btn-outline-dark">
+                    <button type="button" title='Play' className="btn btn-outline-dark" onClick={this.alertIt()}>
                             <i className="fas fa-play "></i>
                     </button>
                     <button type="button" title='Pause' className="btn btn-outline-dark">
