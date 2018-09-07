@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 class Timer extends Component {
 
-
     render() {
         return (
             <div className='mb-5 timer d-flex flex-row justify-content-around w-50 mx-auto'>

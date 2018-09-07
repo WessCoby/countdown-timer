@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Timer from './components/Timer';
 import Buttons from './components/Buttons';
-import ToggleableTimerForm from "./components/ToggleableTimerForm";
+import TimerInputToggle from "./components/TimerInputToggle";
 
 class App extends Component {
 
@@ -24,7 +24,7 @@ class App extends Component {
                 sec: this.leadingZero(timeInSeconds),
             } // return 00:00:ss if timeInSeconds is less than 60
         } else if (timeInSeconds >= 60 && timeInSeconds < 3600) {
-            let minutes = parseInt(timeInSeconds / 60);
+            let minutes = parseInt((timeInSeconds / 60), 10);
             let seconds = timeInSeconds % 60;
             return {
                 hr: this.leadingZero(0),
@@ -33,42 +33,130 @@ class App extends Component {
             } // return 00:mm:ss if timeInSeconds ranges from 60 to 3600 (3600 not included)
         }
         else if (timeInSeconds >= 3600 && timeInSeconds <= 359999) {
-            let hours = parseInt(timeInSeconds / 3600);
-            let minutes = parseInt((timeInSeconds % 3600) / 60);
+            let hours = parseInt((timeInSeconds / 3600), 10);
+            let minutes = parseInt(((timeInSeconds % 3600) / 60), 10);
             let seconds = timeInSeconds % 60;
             return {
                 hr: this.leadingZero(hours),
                 min: this.leadingZero(minutes),
                 sec: this.leadingZero(seconds),
-            }
-        }
-        else {
-            return {
-                hr: this.leadingZero(0),
-                min: this.leadingZero(0),
-                sec: this.leadingZero(0),
-            }
+            } // return hh:mm:ss. Max = 99:59:59 equivalent to 359999 seconds
         }
     };
 
-    // Component Initial State 00:00:00
+    // Convert Timer from hh:mm:ss to seconds
+    // Accepts a timer object and returns a single value (seconds) from its hr, min and sec properties
+    convertTimerToSeconds = (timerObject) => {
+        return parseInt((timerObject.hr * 3600), 10) + parseInt((timerObject.min  * 60), 10) + parseInt(timerObject.sec, 10);
+    };
+
+    // App Component Initial State 00:00:00
     state = {
         timer: {
             hr: this.leadingZero(0),
             min: this.leadingZero(0),
             sec: this.leadingZero(0),
+        },
+        status: null,
+        userInput: 0
+    };
+
+    updateInterval; // Variable to hold timer update interval function
+
+    // setState function used to change state, timer
+    timerStateMod = (newTimeInSeconds) => {
+        let newTimer = Object.assign({}, this.state.timer);
+        newTimer = this.convertSecondsToTimer(newTimeInSeconds);
+        this.setState(
+            () => ({timer: newTimer})
+        );
+    };
+
+    // setState function used to change state, status
+    setStatus = (action) => {
+        this.setState(
+            () => ({ status: action })
+        );
+    };
+
+
+    // Interactive state change. Assigning User input values to state
+    // Passed to TimerInputToggle Component as Prop
+    handleTimerInput = (seconds) => {
+        clearInterval(this.updateInterval);
+        this.setState((prevState) => {
+            return ({
+                userInput: seconds,
+                timer: this.convertSecondsToTimer(seconds),
+                status: 'ready'
+            });
+        });
+    };
+
+    // Initiates the countdown timer. Used in setInterval()
+    countdown = () => {
+        if (this.convertTimerToSeconds(this.state.timer) > 0) {
+            let secs = this.convertTimerToSeconds(this.state.timer);
+            secs--;
+            this.timerStateMod(secs);
+        } else {
+            console.log(this.state.status);
+            clearInterval(this.updateInterval);
         }
     };
 
-    // Change State [ Enforcing State Immutability with the Use of Object.assign() ]
-    stateMod = (newTimeInSeconds) => {
-        let newTimer = Object.assign({}, this.state.timer);
-        newTimer = this.convertSecondsToTimer(newTimeInSeconds);
-        this.setState({timer: newTimer});
+    // Start Countdown Timer
+    startTimer = () => {
+        console.log(this.state.status);
+        if (
+            (this.state.status === "ready" && this.state.status !== null) ||
+            this.state.status === "paused" || this.state.status === "stopped"
+        ) {
+            this.updateInterval = setInterval(
+                () => {this.countdown()},
+                1000
+            );
+            this.setStatus("started");
+        } else if (this.state.status === "started") {
+            alert("Timer already running");
+        } else {
+            alert("Set a timer to start");
+        }
     };
 
-    handleTimerInput = (seconds) => {
-        this.stateMod(seconds);
+    // Pause Countdown Timer
+    pauseTimer = () => {
+        if (this.state.status === "started") {
+            clearInterval(this.updateInterval);
+            this.setStatus("paused");
+        } else if (
+            this.state.status === null ||
+            this.state.status === "ready" ||
+            this.state.status === "paused" ||
+            this.state.status === "stopped"
+        ) {
+            alert("Timer not started");
+        }
+    };
+
+    // Stops timer, returns state to the timer value provided by user
+    stopTimer = () => {
+        if (this.state.status === "started" || this.state.status === "paused") {
+            clearInterval(this.updateInterval);
+            this.timerStateMod(this.state.userInput);
+            this.setStatus("stopped");
+        } else if (this.state.status === null || this.state.status === "ready" || this.state.status === "stopped") {
+            alert("Timer not running");
+        }
+    };
+
+    // Reset Timer. Set state to 00:00:00 and status back to null
+    resetTimer = () => {
+        if (this.state.status !== null) {
+            clearInterval(this.updateInterval);
+            this.timerStateMod(0);
+            this.setStatus(null);
+        }
     };
 
   render() {
@@ -86,10 +174,15 @@ class App extends Component {
                             min={this.state.timer.min}
                             sec={this.state.timer.sec}
                         />
-                        <ToggleableTimerForm inputHandler={this.handleTimerInput} />
+                        <TimerInputToggle inputHandler={this.handleTimerInput} />
                     </div>
                     <div className="card-footer bg-primary">
-                        <Buttons />
+                        <Buttons
+                            onTimerStart={this.startTimer}
+                            onTimerPause={this.pauseTimer}
+                            onTimerStop={this.stopTimer}
+                            onTimerReset={this.resetTimer}
+                        />
                     </div>
                 </div>
             </div>
