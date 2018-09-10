@@ -100,14 +100,13 @@ class App extends Component {
             secs--;
             this.timerStateMod(secs);
         } else {
-            console.log(this.state.status);
-            clearInterval(this.updateInterval);
+            // clearInterval(this.updateInterval);
+            this.stopTimer();
         }
     };
 
     // Start Countdown Timer
     startTimer = () => {
-        console.log(this.state.status);
         if (
             (this.state.status === "ready" && this.state.status !== null) ||
             this.state.status === "paused" || this.state.status === "stopped"
@@ -155,6 +154,7 @@ class App extends Component {
         if (this.state.status !== null) {
             clearInterval(this.updateInterval);
             this.timerStateMod(0);
+            this.setState({userInput: 0});
             this.setStatus(null);
         }
     };
